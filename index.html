@@ -4,84 +4,88 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>凱程診所｜減重門診・瘦瘦針治療衛教</title>
-<meta name="description" content="凱程診所減重門診 — 認識瘦瘦針(GLP-1/GIP腸泌素)的原理、功效、適應症、臨床實證、施打方式、保存與副作用須知。由家醫科醫師專業評估。">
+<meta name="description" content="凱程診所減重門診 — 張凱傑院長帶您認識瘦瘦針(GLP-1/GIP腸泌素)的原理、功效、適應症、臨床實證、施打方式、保存與副作用，以及「減脂保肌」的正確減重觀念。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
 <style>
 :root{
   --teal:#0e7c7b; --teal-d:#0a5e5d; --mint:#14b8a6; --mint-l:#5eead4;
-  --ink:#1f2a37; --grey:#5b6b72; --line:#e3ebea;
-  --bg:#f5f9f8; --card:#ffffff; --warn:#b45309; --warn-bg:#fff7ed; --danger:#b91c1c;
-  --shadow:0 6px 24px rgba(14,124,123,.10);
+  --ink:#1f2a37; --grey:#5b6b72; --line:#e3ebea; --bg:#f5f9f8; --card:#fff;
+  --warn:#b45309; --warn-bg:#fff7ed; --danger:#b91c1c; --shadow:0 6px 24px rgba(14,124,123,.10);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:'Noto Sans TC',system-ui,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;
-  color:var(--ink);background:var(--bg);line-height:1.8;-webkit-font-smoothing:antialiased}
-img{max-width:100%}
+  color:var(--ink);background:var(--bg);line-height:1.85;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
 a{color:var(--teal);text-decoration:none}
-.wrap{max-width:960px;margin:0 auto;padding:0 20px}
-section{padding:54px 0;border-bottom:1px solid var(--line)}
-h2{font-size:1.6rem;font-weight:900;color:var(--teal-d);margin-bottom:6px;letter-spacing:.5px}
-h2 .en{display:block;font-size:.78rem;font-weight:500;color:var(--mint);letter-spacing:2px;text-transform:uppercase}
-h3{font-size:1.12rem;font-weight:700;margin:22px 0 8px;color:var(--ink)}
-p{margin:8px 0}
-.lead{color:#3d4a57}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+h2{font-size:1.62rem;font-weight:900;color:var(--teal-d);margin-bottom:6px;letter-spacing:.5px}
+h2 .en{display:block;font-size:.76rem;font-weight:500;color:var(--mint);letter-spacing:2px;text-transform:uppercase}
+h3{font-size:1.12rem;font-weight:700;margin:20px 0 8px}
+p{margin:8px 0}.lead{color:#3d4a57}
 
 /* nav */
-header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);
-  backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
-.brand{display:flex;align-items:center;gap:10px;font-weight:900;color:var(--teal-d)}
-.brand .dot{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--teal),var(--mint));
-  display:grid;place-items:center;color:#fff;font-size:1.05rem}
-.menu{display:flex;gap:20px;font-size:.92rem;font-weight:500}
+header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:58px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;color:var(--teal-d);font-size:1.02rem}
+.brand .dot{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--teal),var(--mint));display:grid;place-items:center;color:#fff}
+.menu{display:flex;gap:18px;font-size:.9rem;font-weight:500}
 .menu a{color:var(--grey)}.menu a:hover{color:var(--teal)}
-.menu-btn{display:none;font-size:1.5rem;background:none;border:0;color:var(--teal-d)}
 
 /* hero */
-.hero{background:linear-gradient(135deg,#0e7c7b 0%,#14b8a6 100%);color:#fff;border:0}
-.hero .wrap{padding:64px 20px}
-.hero .tag{display:inline-block;background:rgba(255,255,255,.18);padding:5px 14px;border-radius:999px;
-  font-size:.82rem;font-weight:500;margin-bottom:18px}
-.hero h1{font-size:2.3rem;font-weight:900;line-height:1.35;margin-bottom:12px}
-.hero p{font-size:1.05rem;opacity:.95;max-width:640px}
-.btns{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
-.btn{display:inline-block;padding:13px 26px;border-radius:999px;font-weight:700;font-size:.98rem}
-.btn-w{background:#fff;color:var(--teal-d)}
-.btn-o{border:2px solid rgba(255,255,255,.7);color:#fff}
-.btn-w:hover{transform:translateY(-2px)}
+.hero{background:linear-gradient(135deg,#0e7c7b 0%,#14b8a6 100%);color:#fff;border:0;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .9fr;gap:30px;align-items:center;padding:54px 20px}
+.hero .tag{display:inline-block;background:rgba(255,255,255,.18);padding:5px 14px;border-radius:999px;font-size:.8rem;margin-bottom:16px}
+.hero h1{font-size:2.25rem;font-weight:900;line-height:1.35;margin-bottom:12px}
+.hero p{font-size:1.02rem;opacity:.96;max-width:560px}
+.btns{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 24px;border-radius:999px;font-weight:700;font-size:.96rem}
+.btn-w{background:#fff;color:var(--teal-d)} .btn-o{border:2px solid rgba(255,255,255,.7);color:#fff}
+.btn-w:hover,.btn-o:hover{transform:translateY(-2px)}
+.hero-photo{justify-self:center;position:relative}
+.hero-photo img{width:260px;border-radius:18px;box-shadow:0 18px 40px rgba(0,0,0,.25);border:4px solid rgba(255,255,255,.55)}
+.hero-photo .cap{position:absolute;left:50%;transform:translateX(-50%);bottom:-14px;white-space:nowrap;
+  background:#fff;color:var(--teal-d);font-weight:700;font-size:.86rem;padding:5px 16px;border-radius:999px;box-shadow:var(--shadow)}
 
-/* cards & grid */
+/* generic */
 .grid{display:grid;gap:18px;margin-top:20px}
 .g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}
 .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:var(--shadow)}
-.card .ic{font-size:1.7rem}
-.card h3{margin-top:10px}
-.pill{display:inline-block;background:#e7f6f4;color:var(--teal-d);font-size:.78rem;font-weight:700;
-  padding:3px 10px;border-radius:999px;margin:0 6px 6px 0}
+.card .ic{width:46px;height:46px;border-radius:12px;background:#e7f6f4;display:grid;place-items:center;font-size:1.5rem;margin-bottom:10px}
+.imgband{width:100%;height:210px;object-fit:cover;border-radius:16px;box-shadow:var(--shadow);margin-top:8px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center;margin-top:20px}
+.split img{width:100%;height:100%;max-height:320px;object-fit:cover;border-radius:16px;box-shadow:var(--shadow)}
 
-/* table */
 .tbl{width:100%;border-collapse:collapse;margin-top:18px;background:#fff;border-radius:14px;overflow:hidden;box-shadow:var(--shadow)}
 .tbl th,.tbl td{padding:13px 14px;text-align:left;border-bottom:1px solid var(--line);font-size:.95rem;vertical-align:top}
-.tbl th{background:var(--teal);color:#fff;font-weight:700}
-.tbl td:first-child{font-weight:700;color:var(--teal-d);white-space:nowrap}
+.tbl th{background:var(--teal);color:#fff}.tbl td:first-child{font-weight:700;color:var(--teal-d);white-space:nowrap}
 .tbl tr:last-child td{border-bottom:0}
 
-/* list */
 ul.chk{list-style:none;margin:10px 0}
 ul.chk li{padding:6px 0 6px 30px;position:relative}
 ul.chk li::before{content:"✓";position:absolute;left:0;color:var(--mint);font-weight:900}
 ul.cross li::before{content:"✕";color:var(--danger)}
 ul.dot{margin:10px 0 10px 22px}.ul li{margin:5px 0}
 
-/* callouts */
 .note{border-left:4px solid var(--mint);background:#effbf9;padding:14px 18px;border-radius:0 12px 12px 0;margin:16px 0}
 .warn{border-left:4px solid var(--warn);background:var(--warn-bg);padding:14px 18px;border-radius:0 12px 12px 0;margin:16px 0}
 .warn b{color:var(--warn)}
 
-/* faq */
+/* 媒體 */
+.media{background:#ecf7f5}
+.media .split img{max-height:380px}
+.keypts{background:#fff;border-radius:16px;padding:20px 22px;box-shadow:var(--shadow);margin-top:18px}
+.keypts li{margin:9px 0;padding-left:6px}
+.newsgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
+.news{display:block;background:#fff;border:1px solid var(--line);border-radius:12px;padding:13px 16px;box-shadow:var(--shadow);transition:.15s}
+.news:hover{transform:translateY(-2px);border-color:var(--mint)}
+.news .src{font-size:.74rem;font-weight:700;color:var(--mint);letter-spacing:1px}
+.news .ttl{color:var(--ink);font-weight:500;font-size:.92rem;margin-top:2px}
+.morenews{font-size:.85rem;color:var(--grey);margin-top:12px}
+
 .faq details{background:#fff;border:1px solid var(--line);border-radius:12px;margin:10px 0;padding:4px 18px;box-shadow:var(--shadow)}
 .faq summary{font-weight:700;cursor:pointer;padding:12px 0;list-style:none;color:var(--teal-d)}
 .faq summary::-webkit-details-marker{display:none}
@@ -89,20 +93,21 @@ ul.dot{margin:10px 0 10px 22px}.ul li{margin:5px 0}
 .faq details[open] summary::after{content:"–"}
 .faq p{padding-bottom:12px;color:#3d4a57}
 
-/* contact */
 .contact{background:#073e3d;color:#fff;border:0}
 .contact h2{color:#fff}.contact h2 .en{color:var(--mint-l)}
 .cinfo{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px}
-.cinfo div{background:rgba(255,255,255,.07);padding:16px 18px;border-radius:12px}
+.cinfo div{background:rgba(255,255,255,.07);padding:15px 18px;border-radius:12px}
 .cinfo .k{font-size:.8rem;color:var(--mint-l);font-weight:700}
 .cinfo .v{font-size:1.05rem;margin-top:2px}
 .disc{font-size:.84rem;color:#6b7b7a;background:#eef4f3;padding:18px 20px;border-radius:12px;margin-top:24px}
-footer{background:#052e2d;color:#9fb6b4;text-align:center;padding:26px 20px;font-size:.85rem}
+footer{background:#052e2d;color:#9fb6b4;text-align:center;padding:24px 20px;font-size:.82rem;line-height:1.7}
 
 @media(max-width:760px){
-  .menu{display:none}.menu-btn{display:block}
-  .hero h1{font-size:1.7rem}.g2,.g3,.cinfo{grid-template-columns:1fr}
-  h2{font-size:1.35rem}
+  .menu{display:none}
+  .hero .wrap{grid-template-columns:1fr;text-align:center}
+  .hero-photo{order:-1}.hero-photo img{width:200px}.btns{justify-content:center}
+  .g2,.g3,.split,.newsgrid,.cinfo{grid-template-columns:1fr}
+  .hero h1{font-size:1.7rem}h2{font-size:1.35rem}
 }
 </style>
 </head>
@@ -112,11 +117,11 @@ footer{background:#052e2d;color:#9fb6b4;text-align:center;padding:26px 20px;font
   <div class="wrap">
     <div class="brand"><span class="dot">凱</span>凱程診所・減重門診</div>
     <nav class="menu">
+      <a href="#media">媒體報導</a>
       <a href="#about">瘦瘦針原理</a>
       <a href="#drugs">兩種針劑</a>
-      <a href="#evidence">適應症實證</a>
-      <a href="#howto">施打方式</a>
-      <a href="#safety">保存與副作用</a>
+      <a href="#concept">減脂保肌</a>
+      <a href="#safety">保存副作用</a>
       <a href="#contact">預約</a>
     </nav>
   </div>
@@ -125,13 +130,51 @@ footer{background:#052e2d;color:#9fb6b4;text-align:center;padding:26px 20px;font
 <!-- HERO -->
 <section class="hero" id="top">
   <div class="wrap">
-    <span class="tag">家庭醫學・糖尿病健康促進機構</span>
-    <h1>體重管理新選擇<br>「瘦瘦針」減重治療</h1>
-    <p>由家醫科醫師完整評估您的代謝狀況，量身規劃以腸泌素（GLP-1／GIP）為核心的減重療程，安全、有實證地幫助您達成健康體重。</p>
-    <div class="btns">
-      <a class="btn btn-w" href="#contact">預約減重評估</a>
-      <a class="btn btn-o" href="#about">先認識瘦瘦針 ↓</a>
+    <div>
+      <span class="tag">家庭醫學・老年醫學・糖尿病健康促進機構</span>
+      <h1>體重管理新選擇<br>「瘦瘦針」減重治療</h1>
+      <p>由家醫科醫師完整評估您的代謝狀況，量身規劃以腸泌素（GLP-1／GIP）為核心的減重療程——<b>減脂、保肌、護代謝</b>，安全又有實證地幫您達成健康體重。</p>
+      <div class="btns">
+        <a class="btn btn-w" href="#contact">預約減重評估</a>
+        <a class="btn btn-o" href="#about">先認識瘦瘦針 ↓</a>
+      </div>
     </div>
+    <div class="hero-photo">
+      <img src="doctor-hero.jpg" alt="凱程診所院長 張凱傑醫師">
+      <span class="cap">凱程診所院長　張凱傑 醫師</span>
+    </div>
+  </div>
+</section>
+
+<!-- 媒體報導 -->
+<section class="media" id="media">
+  <div class="wrap">
+    <h2><span class="en">In the media</span>媒體專訪・專業見解</h2>
+    <div class="split">
+      <img src="doctor-about.jpg" alt="張凱傑醫師 媒體專訪">
+      <div>
+        <p class="lead">張凱傑院長為糖尿病與體重管理領域受訪專家，近期就「減重與肌肉流失」議題接受多家媒體採訪，獲 <b>ETtoday、中央社、聯合報</b> 等逾 6 家平台報導與轉載。</p>
+        <div class="keypts">
+          <b style="color:var(--teal-d)">院長專訪重點</b>
+          <ul class="chk">
+            <li>減重核心是「<b>減掉脂肪、保留肌肉</b>」，體重數字下降 ≠ 健康改善</li>
+            <li><b>內臟脂肪</b>才是慢性發炎、血管與代謝疾病風險的關鍵</li>
+            <li>肌肉流失過多 → 基礎代謝下降、易疲勞、血糖調節變差，<b>反而提高復胖風險</b></li>
+            <li>體重減 5% 即可降低高血壓、高血糖風險；減重 &gt;15% 可望改善心血管、心衰與第二型糖尿病</li>
+            <li>選擇減重藥物，應評估「能否<b>有效減脂、同時保留肌肉</b>」</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="newsgrid">
+      <a class="news" href="https://health.ettoday.net/news/3151167" target="_blank" rel="noopener"><div class="src">ETtoday 健康雲</div><div class="ttl">他體重破百靠打球減重反受傷　醫揭「脂肪毒性」讓肌力變差</div></a>
+      <a class="news" href="https://www.cna.com.tw/news/ahel/202604180187.aspx" target="_blank" rel="noopener"><div class="src">中央社 CNA</div><div class="ttl">百公斤男跳投斷阿基里斯腱　醫：先減重再運動</div></a>
+      <a class="news" href="https://udn.com/news/amp/story/7266/9450054" target="_blank" rel="noopener"><div class="src">聯合新聞網 UDN</div><div class="ttl">減重一定會讓肌肉變少！醫籲「保肌減脂」防復胖</div></a>
+      <a class="news" href="https://www.knews.com.tw/news/0B2C6FDE94AF2F5A00399C99A03EB41C" target="_blank" rel="noopener"><div class="src">知新聞 KNEWS</div><div class="ttl">瘦子還打瘦瘦針　醫警告副作用更嚴重</div></a>
+      <a class="news" href="https://ctinews.com/news/items/GVxo4Rk4n8" target="_blank" rel="noopener"><div class="src">中天新聞網</div><div class="ttl">減重保肌觀念　醫師專業解析</div></a>
+      <a class="news" href="https://www.worldjournal.com/wj/amp/story/121242/9450527" target="_blank" rel="noopener"><div class="src">世界新聞網</div><div class="ttl">正確減重：減脂保肌、留意內臟脂肪</div></a>
+    </div>
+    <p class="morenews">亦獲 LINE TODAY、PChome 等平台轉載。</p>
   </div>
 </section>
 
@@ -139,13 +182,14 @@ footer{background:#052e2d;color:#9fb6b4;text-align:center;padding:26px 20px;font
 <section id="about">
   <div class="wrap">
     <h2><span class="en">How it works</span>瘦瘦針的原理與功效</h2>
-    <p class="lead">「瘦瘦針」是腸泌素（incretin）類藥物的俗稱。它模擬人體自然分泌的荷爾蒙 <b>GLP-1</b>（與部分藥物的 <b>GIP</b>），從多個環節調節食慾與代謝——<b>不是單純抑制食慾的減肥藥</b>。</p>
+    <p class="lead">「瘦瘦針」是腸泌素（incretin）類藥物的俗稱，模擬人體自然分泌的 <b>GLP-1</b>（與部分藥物的 <b>GIP</b>），從多個環節調節食慾與代謝——<b>不是單純抑制食慾的減肥藥</b>。</p>
     <div class="grid g2">
       <div class="card"><div class="ic">🧠</div><h3>作用於大腦食慾中樞</h3><p>增加飽足感、降低飢餓感與對食物的渴望，自然減少進食量。</p></div>
-      <div class="card"><div class="ic">🍽️</div><h3>延緩胃排空</h3><p>食物停留胃中較久，吃一點就有飽足感、較不易過量。</p></div>
-      <div class="card"><div class="ic">🩸</div><h3>穩定血糖</h3><p>促進胰島素分泌、抑制升糖素，<b>依血糖高低調節</b>，平時較少造成低血糖。</p></div>
-      <div class="card"><div class="ic">❤️</div><h3>改善代謝</h3><p>臨床上常同時觀察到血壓、血脂、脂肪肝指標改善，效益不只在體重。</p></div>
+      <div class="card"><div class="ic">🍽️</div><h3>延緩胃排空</h3><p>食物停留胃中較久，吃一點就飽、較不易過量。</p></div>
+      <div class="card"><div class="ic">🩸</div><h3>穩定血糖</h3><p>促進胰島素、抑制升糖素，<b>依血糖高低調節</b>，平時較少低血糖。</p></div>
+      <div class="card"><div class="ic">❤️</div><h3>改善代謝</h3><p>臨床常同時觀察到血壓、血脂、脂肪肝指標改善，效益不只在體重。</p></div>
     </div>
+    <img class="imgband" src="img/food.jpg" alt="健康均衡飲食">
     <div class="note">簡單說：瘦瘦針讓您「比較不餓、比較快飽、血糖更穩」，再搭配飲食與運動，達成可持續的減重。</div>
   </div>
 </section>
@@ -154,14 +198,14 @@ footer{background:#052e2d;color:#9fb6b4;text-align:center;padding:26px 20px;font
 <section id="drugs">
   <div class="wrap">
     <h2><span class="en">The injections</span>兩種主要針劑比較</h2>
-    <p class="lead">凱程診所目前提供兩款每週一次的長效針劑，由醫師依您的體重、共病與目標選擇。</p>
+    <p class="lead">凱程診所提供兩款每週一次的長效針劑，由醫師依您的體重、共病與目標選擇。</p>
     <table class="tbl">
       <tr><th>項目</th><th>猛健樂 Mounjaro</th><th>週纖達（semaglutide 週效型）</th></tr>
       <tr><td>主要成分</td><td>Tirzepatide（替爾泊肽）</td><td>Semaglutide（司美格魯肽）</td></tr>
       <tr><td>作用機轉</td><td><b>GIP + GLP-1 雙重</b>腸泌素受體</td><td>GLP-1 單一腸泌素受體</td></tr>
       <tr><td>施打頻率</td><td>每週一次・皮下注射</td><td>每週一次・皮下注射</td></tr>
-      <tr><td>臨床減重幅度*</td><td>大型試驗中平均可達約 <b>15–20%</b> 體重下降</td><td>大型試驗中平均約 <b>15%</b> 體重下降</td></tr>
-      <tr><td>劑量規劃</td><td colspan="2">皆由<b>低劑量起始、每約 4 週逐步調升</b>，以降低腸胃不適。最終劑量由醫師依反應決定。</td></tr>
+      <tr><td>臨床減重幅度*</td><td>大型試驗平均約 <b>15–20%</b></td><td>大型試驗平均約 <b>15%</b></td></tr>
+      <tr><td>劑量規劃</td><td colspan="2"><b>低劑量起始、每約 4 週逐步調升</b>，以降低腸胃不適；最終劑量由醫師依反應決定。</td></tr>
     </table>
     <p style="font-size:.82rem;color:var(--grey);margin-top:10px">*減重幅度為大型隨機臨床試驗之平均結果（搭配生活型態調整），個人實際成效因人而異。</p>
   </div>
@@ -194,13 +238,31 @@ footer{background:#052e2d;color:#9fb6b4;text-align:center;padding:26px 20px;font
   </div>
 </section>
 
+<!-- 減脂保肌 觀念 -->
+<section id="concept">
+  <div class="wrap">
+    <h2><span class="en">Fat down, muscle kept</span>正確減重觀念：減脂保肌</h2>
+    <div class="split">
+      <div>
+        <p class="lead">張凱傑院長在媒體專訪中特別提醒：減重不是只看體重計數字，<b>「減掉脂肪、保留肌肉」</b>才是真正健康的減重。</p>
+        <ul class="chk">
+          <li>任何減重方式都可能流失肌肉；<b>瘦瘦針搭配足夠蛋白質與阻力運動</b>，才能把肌肉留住</li>
+          <li>肌肉是基礎代謝的引擎，<b>保住肌肉＝不易復胖</b></li>
+          <li>凱程療程同步追蹤體重、體脂與肌肉量，不只追求數字下降</li>
+        </ul>
+      </div>
+      <img src="img/exercise.jpg" alt="運動保留肌肉">
+    </div>
+  </div>
+</section>
+
 <!-- 施打方式 -->
 <section id="howto">
   <div class="wrap">
     <h2><span class="en">How to inject</span>施打方式</h2>
     <div class="grid g3">
-      <div class="card"><div class="ic">📍</div><h3>注射部位</h3><p>腹部、大腿外側或上臂皮下。<b>每次輪換部位</b>，避免同一處反覆施打。</p></div>
-      <div class="card"><div class="ic">📅</div><h3>固定時間</h3><p>每週固定一天施打，與三餐無關，<b>可自行在家完成</b>，漏打時依說明補打。</p></div>
+      <div class="card"><div class="ic">📍</div><h3>注射部位</h3><p>腹部、大腿外側或上臂皮下，<b>每次輪換部位</b>，避免同一處反覆施打。</p></div>
+      <div class="card"><div class="ic">📅</div><h3>固定時間</h3><p>每週固定一天施打、與三餐無關，<b>可自行在家完成</b>，漏打依說明補打。</p></div>
       <div class="card"><div class="ic">📈</div><h3>劑量漸進</h3><p>從低劑量開始、每約 4 週調升一階，讓身體適應、減少噁心等不適。</p></div>
     </div>
     <div class="note">首次施打前，診所衛教人員會親自示範筆針操作、注射角度與輪換方式，確認您學會後再帶回家使用。</div>
@@ -211,21 +273,23 @@ footer{background:#052e2d;color:#9fb6b4;text-align:center;padding:26px 20px;font
 <section id="safety">
   <div class="wrap">
     <h2><span class="en">Storage &amp; safety</span>保存注意事項與副作用須知</h2>
-
-    <h3>💧 保存方式</h3>
-    <ul class="chk">
-      <li>未開封：冷藏 <b>2–8°C</b>、避光保存，<b>切勿冷凍</b>（結凍即失效）。</li>
-      <li>已開封的筆針：依各藥品仿單，於規定天數內與允許溫度下使用，逾期勿用。</li>
-      <li>外出攜帶：避免高溫與陽光直射，建議使用保冷袋；勿劇烈搖晃。</li>
-      <li>放置於兒童無法取得處；針頭使用後請投入專用收集容器。</li>
-    </ul>
+    <div class="split" style="margin-bottom:6px">
+      <img src="img/injection.jpg" alt="針劑保存">
+      <div>
+        <h3 style="margin-top:0">💧 保存方式</h3>
+        <ul class="chk">
+          <li>未開封：冷藏 <b>2–8°C</b>、避光，<b>切勿冷凍</b>（結凍即失效）</li>
+          <li>已開封筆針：依各藥仿單，於規定天數與溫度內使用，逾期勿用</li>
+          <li>外出攜帶：避免高溫與陽光直射，建議用保冷袋；勿劇烈搖晃</li>
+          <li>放置兒童無法取得處；針頭用後投入專用收集容器</li>
+        </ul>
+      </div>
+    </div>
 
     <h3>⚠️ 常見副作用（多在劑量調升初期、之後緩解）</h3>
     <p>噁心、嘔吐、腹瀉、便秘、腹脹、食慾下降。建議少量多餐、清淡飲食、避免油膩，多可改善。</p>
 
-    <div class="warn">
-      <b>須立即就醫的警訊：</b>持續且嚴重的上腹痛（可能放射至背部，警惕急性胰臟炎）、嚴重持續嘔吐／脫水、右上腹痛合併發燒或黃疸（膽囊問題）、嚴重過敏反應。
-    </div>
+    <div class="warn"><b>須立即就醫的警訊：</b>持續且嚴重的上腹痛（可能放射至背部，警惕急性胰臟炎）、嚴重持續嘔吐／脫水、右上腹痛合併發燒或黃疸（膽囊問題）、嚴重過敏反應。</div>
 
     <h3>🚫 禁忌與須主動告知醫師的狀況</h3>
     <ul class="cross chk">
@@ -244,10 +308,10 @@ footer{background:#052e2d;color:#9fb6b4;text-align:center;padding:26px 20px;font
   <div class="wrap">
     <h2><span class="en">FAQ</span>常見問題</h2>
     <div class="faq">
-      <details><summary>停藥後會不會復胖？</summary><p>瘦瘦針是輔助工具而非「打了就一勞永逸」。療程中同步建立飲食與運動習慣，能讓成果更穩定；是否減量或停藥、如何維持，會由醫師與您一起規劃。</p></details>
+      <details><summary>停藥後會不會復胖？</summary><p>瘦瘦針是輔助工具而非「打了就一勞永逸」。療程中同步建立飲食、運動與保肌習慣，能讓成果更穩定；是否減量或停藥、如何維持，會由醫師與您一起規劃。</p></details>
       <details><summary>大概多久看得到效果？</summary><p>多數人在數週內食慾與體重開始變化，明顯成效通常需數月並搭配生活調整。每個人反應不同，會在回診時依數據調整。</p></details>
       <details><summary>健保有給付嗎？</summary><p>用於「減重」多屬<b>自費</b>療程。實際費用與療程方案請於評估時由診所說明。</p></details>
-      <details><summary>會不會很痛？自己打得來嗎？</summary><p>使用極細的皮下注射筆針，多數人僅有輕微感覺。診所會親自教學，確認您能安心自行操作。</p></details>
+      <details><summary>會不會很痛？自己打得來嗎？</summary><p>使用極細的皮下注射筆針，多數人僅輕微感覺。診所會親自教學，確認您能安心自行操作。</p></details>
     </div>
   </div>
 </section>
@@ -256,11 +320,11 @@ footer{background:#052e2d;color:#9fb6b4;text-align:center;padding:26px 20px;font
 <section class="contact" id="contact">
   <div class="wrap">
     <h2><span class="en">Book a consultation</span>預約減重評估</h2>
-    <p>想知道自己適不適合瘦瘦針？歡迎來電或加 LINE 預約，由醫師為您完整評估。</p>
+    <p>想知道自己適不適合瘦瘦針？歡迎來電或加 LINE 預約，由張凱傑院長為您完整評估。</p>
     <div class="cinfo">
       <div><div class="k">診所</div><div class="v">凱程診所（家醫／老年醫學／糖尿病健康促進機構）</div></div>
       <div><div class="k">電話預約</div><div class="v"><a href="tel:+886222231868" style="color:#fff">(02) 2223-1868</a></div></div>
-      <div><div class="k">LINE 預約</div><div class="v"><a href="https://line.me/R/ti/p/@hgf1022b" style="color:#5eead4">加 LINE 好友 ＠hgf1022b</a></div></div>
+      <div><div class="k">LINE 預約</div><div class="v"><a href="https://line.me/R/ti/p/@hgf1022b" style="color:#5eead4">加 LINE 好友　＠hgf1022b</a></div></div>
       <div><div class="k">地址</div><div class="v"><a href="https://www.google.com/maps/search/?api=1&query=新北市中和區員山路150-8號" style="color:#fff" target="_blank" rel="noopener">235 新北市中和區員山路150-8號</a></div></div>
       <div style="grid-column:1/-1"><div class="k">門診時間</div><div class="v" style="line-height:1.9">
         週一～週六　上午 08:30–11:50　・　下午 15:30–17:50<br>
@@ -274,11 +338,11 @@ footer{background:#052e2d;color:#9fb6b4;text-align:center;padding:26px 20px;font
 </section>
 
 <footer>
-  © 凱程診所 KC Family Clinic ・ 減重門診衛教專頁 ・ 本頁僅供衛教參考，實際治療請洽門診
+  © 凱程診所 KC Family Clinic ・ 減重門診衛教專頁 ・ 院長 張凱傑 醫師<br>
+  本頁僅供衛教參考，實際治療請洽門診　|　部分示意圖片來源：Unsplash
 </footer>
 
 <script>
-// 行動版選單（簡易錨點，nav 已是固定列，這裡保留未來擴充）
 document.querySelectorAll('a[href^="#"]').forEach(a=>{
   a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));
     if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}});
