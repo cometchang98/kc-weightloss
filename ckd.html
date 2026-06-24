@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>凱程診所｜慢性腎臟病（CKD/DKD）衛教專頁</title>
+<meta name="description" content="凱程診所張凱傑院長為您介紹慢性腎臟病（CKD）與糖尿病腎病（DKD）的診斷標準、成因、警訊，以及排糖藥 SGLT2i（Jardiance、Forxiga）與 Kerendia 的腎臟保護效益、服藥注意事項，以及護腎飲食與生活建議。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --teal:#0e7c7b;--teal-d:#0a5e5d;--mint:#14b8a6;--mint-l:#5eead4;
+  --blue:#1d4ed8;--blue-l:#3b82f6;--blue-bg:#eff6ff;
+  --purple:#7c3aed;--purple-bg:#f5f3ff;
+  --ink:#1f2a37;--grey:#5b6b72;--line:#e3ebea;--bg:#f5f9f8;--card:#fff;
+  --warn:#b45309;--warn-bg:#fff7ed;--danger:#b91c1c;--shadow:0 6px 24px rgba(14,124,123,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans TC',system-ui,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;
+  color:var(--ink);background:var(--bg);line-height:1.85;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--teal);text-decoration:none}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+h2{font-size:1.62rem;font-weight:900;color:var(--teal-d);margin-bottom:6px;letter-spacing:.5px}
+h2 .en{display:block;font-size:.76rem;font-weight:500;color:var(--mint);letter-spacing:2px;text-transform:uppercase}
+h3{font-size:1.12rem;font-weight:700;margin:20px 0 8px}
+p{margin:8px 0}.lead{color:#3d4a57}
+
+/* nav */
+header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:58px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;color:var(--teal-d);font-size:1.02rem;text-decoration:none}
+.brand .dot{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--teal),var(--mint));display:grid;place-items:center;color:#fff}
+.menu{display:flex;gap:18px;font-size:.9rem;font-weight:500}
+.menu a{color:var(--grey)}.menu a:hover{color:var(--teal)}
+
+/* hero */
+.hero{background:linear-gradient(135deg,#0a5e5d 0%,#0e7c7b 50%,#14b8a6 100%);color:#fff;border:0;overflow:hidden}
+.hero .wrap{padding:54px 20px}
+.hero .tag{display:inline-block;background:rgba(255,255,255,.18);padding:5px 14px;border-radius:999px;font-size:.8rem;margin-bottom:16px}
+.hero h1{font-size:2.1rem;font-weight:900;line-height:1.35;margin-bottom:12px}
+.hero p{font-size:1.02rem;opacity:.96;max-width:680px}
+.btns{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:11px 22px;border-radius:999px;font-weight:700;font-size:.93rem}
+.btn-w{background:#fff;color:var(--teal-d)}.btn-o{border:2px solid rgba(255,255,255,.7);color:#fff}
+.btn-w:hover,.btn-o:hover{transform:translateY(-2px)}
+
+/* stat banner */
+.statband{display:flex;gap:0;background:rgba(0,0,0,.18);border-radius:14px;margin-top:32px;overflow:hidden;flex-wrap:wrap}
+.statband .s{flex:1;min-width:160px;padding:18px 22px;border-right:1px solid rgba(255,255,255,.15)}
+.statband .s:last-child{border-right:0}
+.statband .num{font-size:1.9rem;font-weight:900;color:#fff}
+.statband .lbl{font-size:.8rem;color:rgba(255,255,255,.8);margin-top:2px}
+
+/* generic */
+.grid{display:grid;gap:18px;margin-top:20px}
+.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:var(--shadow)}
+.card .ic{width:46px;height:46px;border-radius:12px;background:#e7f6f4;display:grid;place-items:center;font-size:1.5rem;margin-bottom:10px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start;margin-top:20px}
+
+.tbl{width:100%;border-collapse:collapse;margin-top:18px;background:#fff;border-radius:14px;overflow:hidden;box-shadow:var(--shadow)}
+.tbl th,.tbl td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line);font-size:.93rem;vertical-align:top}
+.tbl th{background:var(--teal);color:#fff}.tbl td:first-child{font-weight:700;color:var(--teal-d);white-space:nowrap}
+.tbl tr:last-child td{border-bottom:0}
+
+ul.chk{list-style:none;margin:10px 0}
+ul.chk li{padding:6px 0 6px 30px;position:relative}
+ul.chk li::before{content:"✓";position:absolute;left:0;color:var(--mint);font-weight:900}
+ul.cross li::before{content:"✕";color:var(--danger)}
+ul.dot{margin:10px 0 10px 22px}.ul li{margin:5px 0}
+
+.note{border-left:4px solid var(--mint);background:#effbf9;padding:14px 18px;border-radius:0 12px 12px 0;margin:16px 0}
+.warn{border-left:4px solid var(--warn);background:var(--warn-bg);padding:14px 18px;border-radius:0 12px 12px 0;margin:16px 0}
+.warn b{color:var(--warn)}
+.info{border-left:4px solid var(--blue-l);background:var(--blue-bg);padding:14px 18px;border-radius:0 12px 12px 0;margin:16px 0}
+
+/* drug card */
+.drug{background:#fff;border:2px solid var(--line);border-radius:18px;padding:24px;box-shadow:var(--shadow);margin-top:20px}
+.drug.jardiance{border-color:#d97706}
+.drug.forxiga{border-color:#2563eb}
+.drug.kerendia{border-color:#7c3aed}
+.drug-header{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.drug-badge{padding:5px 14px;border-radius:999px;font-size:.78rem;font-weight:700;letter-spacing:1px}
+.badge-j{background:#fef3c7;color:#92400e}
+.badge-f{background:#dbeafe;color:#1e40af}
+.badge-k{background:#ede9fe;color:#5b21b6}
+.drug-name{font-size:1.18rem;font-weight:900}
+.drug-sub{font-size:.85rem;color:var(--grey);margin-top:1px}
+.drug-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+.drug-item{background:#f8fffe;border:1px solid var(--line);border-radius:10px;padding:13px 15px}
+.drug.forxiga .drug-item{background:#f0f6ff}
+.drug.kerendia .drug-item{background:#f5f3ff}
+.drug-item .k{font-size:.78rem;font-weight:700;color:var(--grey);letter-spacing:.5px;margin-bottom:4px}
+.drug-item .v{font-size:.93rem;line-height:1.65}
+
+/* risk table (KDIGO) */
+.kdigo{width:100%;border-collapse:collapse;margin-top:18px;font-size:.88rem;background:#fff;border-radius:14px;overflow:hidden;box-shadow:var(--shadow)}
+.kdigo th,.kdigo td{padding:9px 12px;border:1px solid var(--line);text-align:center;vertical-align:middle}
+.kdigo thead th{background:var(--teal);color:#fff;font-weight:700}
+.kdigo .stage-col{background:#e7f6f4;font-weight:700;color:var(--teal-d);text-align:left}
+.kdigo .low{background:#dcfce7;color:#166534}
+.kdigo .med{background:#fef9c3;color:#854d0e}
+.kdigo .high{background:#fed7aa;color:#9a3412}
+.kdigo .vhigh{background:#fee2e2;color:#991b1b}
+
+/* warning signs */
+.signs{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:20px}
+.sign{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 12px;text-align:center;box-shadow:var(--shadow)}
+.sign .ic{font-size:2rem;margin-bottom:8px}
+.sign .lbl{font-size:.9rem;font-weight:700;color:var(--teal-d)}
+.sign .desc{font-size:.78rem;color:var(--grey);margin-top:4px;line-height:1.5}
+
+/* life tips */
+.tips{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}
+.tip{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow)}
+.tip .ic{font-size:1.6rem;margin-bottom:8px}
+.tip h4{font-size:1rem;font-weight:700;color:var(--teal-d);margin-bottom:6px}
+.tip p{font-size:.88rem;color:#3d4a57;margin:0}
+
+/* contact */
+.contact{background:#073e3d;color:#fff;border:0}
+.contact h2{color:#fff}.contact h2 .en{color:var(--mint-l)}
+.cinfo{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px}
+.cinfo div{background:rgba(255,255,255,.07);padding:15px 18px;border-radius:12px}
+.cinfo .k{font-size:.8rem;color:var(--mint-l);font-weight:700}
+.cinfo .v{font-size:1.05rem;margin-top:2px}
+.disc{font-size:.84rem;color:#6b7b7a;background:#eef4f3;padding:18px 20px;border-radius:12px;margin-top:24px}
+
+footer{background:#052e2d;color:#9fb6b4;text-align:center;padding:32px 20px 24px;font-size:.82rem;line-height:1.7}
+.footer-back{display:inline-flex;align-items:center;gap:8px;margin-bottom:20px;padding:11px 26px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff;font-size:.95rem;font-weight:700;transition:.15s}
+.footer-back:hover{background:rgba(255,255,255,.18);transform:translateY(-2px);color:#fff}
+
+@media(max-width:760px){
+  .menu{display:none}
+  .hero h1{font-size:1.65rem}
+  h2{font-size:1.3rem}
+  .g2,.g3,.split,.cinfo,.drug-grid,.signs,.tips{grid-template-columns:1fr}
+  .signs{grid-template-columns:1fr 1fr}
+  .statband{flex-direction:column}
+  .statband .s{border-right:0;border-bottom:1px solid rgba(255,255,255,.15)}
+  .statband .s:last-child{border-bottom:0}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="https://cometchang98.github.io/kc-clinic/"><span class="dot">凱</span>凱程診所・慢性腎臟病衛教</a>
+    <nav class="menu">
+      <a href="https://cometchang98.github.io/kc-clinic/">🏠 診所首頁</a>
+      <a href="#what-is-ckd">認識 CKD</a>
+      <a href="#diagnosis">診斷標準</a>
+      <a href="#drugs">保腎藥物</a>
+      <a href="#lifestyle">護腎生活</a>
+      <a href="#contact">預約</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <span class="tag">家庭醫學・糖尿病・初期慢性腎臟病健康促進機構</span>
+    <h1>守護腎利人生<br>慢性腎臟病（CKD/DKD）衛教</h1>
+    <p>台灣每 8 人就有 1 人患有慢性腎臟病，卻有高達 <b>9 成患者不自知</b>。凱程診所張凱傑院長帶您認識 CKD 的成因、診斷、警訊，以及最新保腎藥物 SGLT2i 與 Kerendia，讓腎臟健康不再是問號。</p>
+    <div class="btns">
+      <a class="btn btn-w" href="#contact">預約腎臟評估</a>
+      <a class="btn btn-o" href="#what-is-ckd">了解 CKD ↓</a>
+    </div>
+    <div class="statband">
+      <div class="s"><div class="num">1/8</div><div class="lbl">台灣成人患有慢性腎臟病</div></div>
+      <div class="s"><div class="num">90%</div><div class="lbl">患者不自知，無明顯症狀</div></div>
+      <div class="s"><div class="num">45.5%</div><div class="lbl">新發洗腎患者源於糖尿病</div></div>
+      <div class="s"><div class="num">5,400</div><div class="lbl">每年因糖尿病新增洗腎人數</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 認識 CKD -->
+<section id="what-is-ckd">
+  <div class="wrap">
+    <h2><span class="en">What is CKD / DKD</span>認識慢性腎臟病</h2>
+    <p class="lead"><b>慢性腎臟病（CKD）</b>指腎臟功能或結構異常持續 3 個月以上；<b>糖尿病腎病（DKD）</b>是糖尿病最常見的長期併發症，也是台灣洗腎的首要原因。腎臟病初期幾乎無感，等到出現症狀往往已進入中晚期。</p>
+
+    <h3>誰是高危險族群？</h3>
+    <p style="color:var(--grey);font-size:.88rem">口訣：<b>「唐老壓藥痛史」</b></p>
+    <div class="grid g3">
+      <div class="card"><div class="ic">🩸</div><h3>糖尿病（唐）</h3><p>高血糖損傷腎絲球微血管，長期下來導致蛋白尿與腎功能下降。</p></div>
+      <div class="card"><div class="ic">👴</div><h3>高齡（老）</h3><p>65 歲以上腎臟自然退化；75 歲以上每 2 人近 1 人有糖尿病，腎臟風險倍增。</p></div>
+      <div class="card"><div class="ic">💢</div><h3>高血壓（壓）</h3><p>高血壓損傷腎微血管，腎臟無法有效排泄廢物與平衡水分。</p></div>
+      <div class="card"><div class="ic">💊</div><h3>長期用藥（藥）</h3><p>止痛藥（NSAIDs）、顯影劑、不明草藥偏方等，長期使用傷腎。</p></div>
+      <div class="card"><div class="ic">😣</div><h3>痛風（痛）</h3><p>高尿酸沉積腎臟，引發慢性發炎，加速腎功能惡化。</p></div>
+      <div class="card"><div class="ic">🧬</div><h3>家族史（史）</h3><p>CKD 有遺傳傾向，家族中有洗腎者，自身風險明顯較高。</p></div>
+    </div>
+
+    <h3>腎臟生病的早期警訊</h3>
+    <p class="lead">腎臟病初期症狀隱匿，出現以下任何一項都應提高警覺：</p>
+    <div class="signs">
+      <div class="sign"><div class="ic">🫧</div><div class="lbl">泡泡尿</div><div class="desc">尿中泡泡持續 5–10 分鐘不消失，可能是蛋白尿</div></div>
+      <div class="sign"><div class="ic">🦵</div><div class="lbl">水腫</div><div class="desc">眼瞼、臉部或下肢浮腫，按壓凹陷不易回彈</div></div>
+      <div class="sign"><div class="ic">😴</div><div class="lbl">倦怠</div><div class="desc">持續感到無力、虛弱、睡眠差、沒精神</div></div>
+      <div class="sign"><div class="ic">😶‍🌫️</div><div class="lbl">貧血</div><div class="desc">腎臟無法製造足夠紅血球生成素，臉色蒼白、易喘</div></div>
+      <div class="sign"><div class="ic">📈</div><div class="lbl">血壓升高</div><div class="desc">難以控制的高血壓，可能是腎功能惡化的訊號</div></div>
+    </div>
+    <div class="warn"><b>重要：</b>腎臟病有「沉默殺手」之稱，<b>超過 9 成患者早期無感</b>。有高風險因子者，應定期抽血（肌酸酐/eGFR）及驗尿（蛋白尿）追蹤。</div>
+  </div>
+</section>
+
+<!-- 診斷標準 -->
+<section id="diagnosis">
+  <div class="wrap">
+    <h2><span class="en">Diagnosis &amp; staging</span>CKD 診斷與分期</h2>
+    <p class="lead">診斷 CKD 主要看兩個指標：<b>腎絲球過濾率（eGFR）</b> 與 <b>尿蛋白（白蛋白尿）</b>，兩者同時影響治療強度與回診頻率。</p>
+
+    <div class="grid g2" style="margin-top:20px">
+      <div class="card">
+        <h3>🔬 腎絲球過濾率（eGFR）</h3>
+        <p>反映腎臟過濾血液的能力，由血清肌酸酐、年齡、性別計算得出。</p>
+        <table class="tbl" style="margin-top:12px">
+          <tr><th>分期</th><th>eGFR（mL/min/1.73m²）</th><th>說明</th></tr>
+          <tr><td>G1</td><td>≥ 90</td><td>正常或偏高</td></tr>
+          <tr><td>G2</td><td>60–89</td><td>輕微降低</td></tr>
+          <tr><td>G3a</td><td>45–59</td><td>輕微至中度降低</td></tr>
+          <tr><td>G3b</td><td>30–44</td><td>中度至嚴重降低</td></tr>
+          <tr><td>G4</td><td>15–29</td><td>嚴重降低</td></tr>
+          <tr><td>G5</td><td>&lt; 15</td><td>腎衰竭</td></tr>
+        </table>
+        <p style="font-size:.82rem;color:var(--grey);margin-top:8px">正常男性肌酸酐 0.7–1.3 mg/dL，女性 0.5–1.1 mg/dL</p>
+      </div>
+      <div class="card">
+        <h3>🧪 尿蛋白（白蛋白尿 UACR）</h3>
+        <p>腎臟無法回收蛋白質時，蛋白質會從尿液漏出，是腎損傷的早期標記。</p>
+        <table class="tbl" style="margin-top:12px">
+          <tr><th>分類</th><th>UACR（mg/g）</th><th>說明</th></tr>
+          <tr><td>A1</td><td>&lt; 30</td><td>正常至輕度升高</td></tr>
+          <tr><td>A2</td><td>30–299</td><td>中度升高（微量白蛋白尿）</td></tr>
+          <tr><td>A3</td><td>≥ 300</td><td>嚴重升高（大量蛋白尿）</td></tr>
+        </table>
+        <div class="note" style="margin-top:14px">尿蛋白 UPCR ≥ 150 mg/g 即需進一步檢查，建議儘速就醫評估。</div>
+      </div>
+    </div>
+
+    <h3>KDIGO 2023 風險分期與建議回診頻率</h3>
+    <p style="font-size:.88rem;color:var(--grey)">橫軸：白蛋白尿分類；縱軸：eGFR 分期</p>
+    <table class="kdigo">
+      <thead>
+        <tr>
+          <th rowspan="2" style="width:160px">eGFR 分期</th>
+          <th colspan="3">白蛋白尿（UACR）</th>
+        </tr>
+        <tr>
+          <th>A1 &lt;30 mg/g</th>
+          <th>A2 30–299 mg/g</th>
+          <th>A3 ≥300 mg/g</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="stage-col">G1 ≥90</td><td class="low">低風險・每年1次</td><td class="low">低風險・每年1次</td><td class="med">中風險・每年2次</td></tr>
+        <tr><td class="stage-col">G2 60–89</td><td class="low">低風險・每年1次</td><td class="low">低風險・每年1次</td><td class="med">中風險・每年2次</td></tr>
+        <tr><td class="stage-col">G3a 45–59</td><td class="med">中風險・每年2次</td><td class="high">高風險・每年3次</td><td class="high">高風險・每年3次</td></tr>
+        <tr><td class="stage-col">G3b 30–44</td><td class="high">高風險・每年3次</td><td class="high">高風險・每年3次</td><td class="vhigh">極高風險・每年4次+</td></tr>
+        <tr><td class="stage-col">G4 15–29</td><td class="vhigh">極高風險・每年4次+</td><td class="vhigh">極高風險・每年4次+</td><td class="vhigh">極高風險・每年4次+</td></tr>
+        <tr><td class="stage-col">G5 &lt;15</td><td class="vhigh">極高風險・每年4次+</td><td class="vhigh">極高風險・每年4次+</td><td class="vhigh">極高風險・每年4次+</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:.82rem;color:var(--grey);margin-top:8px">資料來源：KDIGO 2023 CKD Clinical Practice Guideline</p>
+  </div>
+</section>
+
+<!-- 保腎藥物 -->
+<section id="drugs">
+  <div class="wrap">
+    <h2><span class="en">Kidney-protective medications</span>保腎自費藥物介紹</h2>
+    <p class="lead">除了傳統血壓藥（ACEi/ARB）之外，目前有三類藥物在臨床試驗中顯示出顯著的腎臟保護效益，凱程診所提供完整評估與處方建議。</p>
+
+    <!-- SGLT2i 總論 -->
+    <div class="info">
+      <b>什麼是 SGLT2i（排糖藥）？</b><br>
+      SGLT-2 是腎臟近端腎小管上的蛋白質，負責把過濾出的糖再回收回血液。SGLT2i 阻斷此機制，讓多餘的糖從尿液排出，達到降血糖、降血壓、減少腎臟過濾壓力的多重效益——<b>不論是否有糖尿病，都不增加低血糖風險</b>，且對心臟與腎臟的保護效益在多個大型臨床試驗中獲得證實。
+    </div>
+
+    <!-- Jardiance -->
+    <div class="drug jardiance">
+      <div class="drug-header">
+        <div>
+          <span class="drug-badge badge-j">SGLT2 抑制劑</span>
+          <div class="drug-name">Jardiance（恩雅達）</div>
+          <div class="drug-sub">Empagliflozin 恩格列淨・禮來 / 百靈佳殷格翰</div>
+        </div>
+      </div>
+      <div class="drug-grid">
+        <div class="drug-item"><div class="k">劑型與用法</div><div class="v">10 mg 或 25 mg，每日一次，早餐前後皆可，不受進食影響</div></div>
+        <div class="drug-item"><div class="k">主要腎臟保護實證</div><div class="v"><b>EMPA-KIDNEY</b>：不論有無糖尿病，顯著降低 CKD 惡化或心血管死亡風險達 28%</div></div>
+        <div class="drug-item"><div class="k">心臟保護實證</div><div class="v">EMPA-REG OUTCOME：降低心血管死亡 38%；EMPEROR 系列：改善心臟衰竭預後</div></div>
+        <div class="drug-item"><div class="k">其他效益</div><div class="v">降低血壓、減少體重、降低尿酸、改善脂肪肝</div></div>
+        <div class="drug-item"><div class="k">常見副作用</div><div class="v">泌尿道感染、生殖器黴菌感染（女性較多）；建議保持會陰部衛生、多喝水</div></div>
+        <div class="drug-item"><div class="k">須注意事項</div><div class="v">eGFR &lt; 20 時不建議用於保腎目的；可能有輕微利尿效果，需適量補水；術前建議暫停</div></div>
+      </div>
+      <div class="warn" style="margin-top:14px"><b>警訊：</b>雖少見，長期空腹或低醣飲食期間可能發生<b>正常血糖酮酸中毒（euglycemic DKA）</b>，有噁心、嘔吐、腹痛、呼吸急促時請立即就醫。</div>
+    </div>
+
+    <!-- Forxiga -->
+    <div class="drug forxiga">
+      <div class="drug-header">
+        <div>
+          <span class="drug-badge badge-f">SGLT2 抑制劑</span>
+          <div class="drug-name">Forxiga（福適佳）</div>
+          <div class="drug-sub">Dapagliflozin 達格列淨・阿斯特捷利康</div>
+        </div>
+      </div>
+      <div class="drug-grid">
+        <div class="drug-item"><div class="k">劑型與用法</div><div class="v">10 mg，每日一次，早餐前後皆可，不受進食影響</div></div>
+        <div class="drug-item"><div class="k">主要腎臟保護實證</div><div class="v"><b>DAPA-CKD</b>：不論有無糖尿病，降低 CKD 惡化、洗腎或腎臟死亡風險達 39%</div></div>
+        <div class="drug-item"><div class="k">心臟保護實證</div><div class="v">DECLARE-TIMI 58：降低心衰住院；DAPA-HF：心臟衰竭患者顯著降低死亡率</div></div>
+        <div class="drug-item"><div class="k">其他效益</div><div class="v">降低蛋白尿、改善血壓、減少體重，對非糖尿病 CKD 患者同樣有效</div></div>
+        <div class="drug-item"><div class="k">常見副作用</div><div class="v">泌尿道感染、生殖器黴菌感染；尿量可能增加，注意補水避免脫水</div></div>
+        <div class="drug-item"><div class="k">須注意事項</div><div class="v">eGFR &lt; 25 時不建議用於保腎目的；低血糖風險低，但與胰島素合用仍需監測</div></div>
+      </div>
+      <div class="note" style="margin-top:14px">Jardiance 與 Forxiga 機轉相同，醫師會依您的腎功能、共病與用藥史選擇最適合的品項，<b>勿自行替換</b>。</div>
+    </div>
+
+    <!-- Kerendia -->
+    <div class="drug kerendia">
+      <div class="drug-header">
+        <div>
+          <span class="drug-badge badge-k">nsMRA・非類固醇礦物皮質素受體拮抗劑</span>
+          <div class="drug-name">Kerendia（科潤迪亞）</div>
+          <div class="drug-sub">Finerenone 非奈利酮・拜耳</div>
+        </div>
+      </div>
+      <div class="drug-grid">
+        <div class="drug-item"><div class="k">劑型與用法</div><div class="v">10 mg 或 20 mg，每日一次，可與食物同服或空腹服用，<b>勿嚼碎</b></div></div>
+        <div class="drug-item"><div class="k">適應對象</div><div class="v">必須為<b>第二型糖尿病合併 CKD</b>（DKD）患者，且需合併使用 ACEi 或 ARB</div></div>
+        <div class="drug-item"><div class="k">主要實證</div><div class="v"><b>FIDELIO-DKD</b>：降低 CKD 惡化或心衰死亡風險 18%；<b>FIGARO-DKD</b>：降低心血管事件 13%</div></div>
+        <div class="drug-item"><div class="k">與舊型 MRA 差異</div><div class="v">較傳統螺旋內酯（spironolactone）引起男性女乳症與高血鉀的風險更低，對心腎保護更具選擇性</div></div>
+        <div class="drug-item"><div class="k">最重要副作用</div><div class="v"><b>高血鉀（Hyperkalemia）</b>：服藥前、調劑後 4 週、之後每 4 個月需監測血鉀；血鉀 > 5.0 mEq/L 需與醫師討論</div></div>
+        <div class="drug-item"><div class="k">禁忌與交互作用</div><div class="v">腎上腺功能不全者禁用；避免同時使用 CYP3A4 強效抑制劑（如葡萄柚汁、部分抗黴菌藥）；避免與保鉀利尿劑合用</div></div>
+      </div>
+      <div class="warn" style="margin-top:14px"><b>注意：</b>服用 Kerendia 期間，<b>請勿飲用葡萄柚汁</b>（影響藥物代謝）。飲食中若攝取過多高鉀食物（香蕉、橘子、番茄、堅果等），可能使血鉀進一步升高，請與醫師或營養師討論飲食調整。</div>
+    </div>
+
+    <!-- 比較表 -->
+    <h3>三種保腎藥物快速比較</h3>
+    <table class="tbl">
+      <tr><th>項目</th><th>Jardiance</th><th>Forxiga</th><th>Kerendia</th></tr>
+      <tr><td>類別</td><td>SGLT2i</td><td>SGLT2i</td><td>nsMRA</td></tr>
+      <tr><td>需要糖尿病？</td><td>否（CKD 均可）</td><td>否（CKD 均可）</td><td><b>是（僅限 DKD）</b></td></tr>
+      <tr><td>低血糖風險</td><td>低</td><td>低</td><td>低（不影響血糖）</td></tr>
+      <tr><td>主要副作用</td><td>泌尿道/生殖器感染</td><td>泌尿道/生殖器感染</td><td><b>高血鉀</b></td></tr>
+      <tr><td>最低 eGFR 限制</td><td>≥ 20（保腎）</td><td>≥ 25（保腎）</td><td>≥ 25</td></tr>
+      <tr><td>體重影響</td><td>輕微減重</td><td>輕微減重</td><td>不影響</td></tr>
+      <tr><td>監測重點</td><td>尿道感染症狀・補水</td><td>尿道感染症狀・補水</td><td><b>定期抽血驗血鉀</b></td></tr>
+    </table>
+    <p style="font-size:.82rem;color:var(--grey);margin-top:10px">三種藥物在部分患者可合併使用，由醫師依腎功能、血鉀與心血管狀況評估。以上為衛教資訊，實際用藥須經醫師處方。</p>
+  </div>
+</section>
+
+<!-- 謹腎用藥 -->
+<section id="avoid">
+  <div class="wrap">
+    <h2><span class="en">Medications to use with caution</span>謹腎用藥：腎功能不良者需注意</h2>
+    <p class="lead">腎臟是許多藥物代謝與排泄的重要器官，腎功能下降時，藥物或其代謝物可能在體內堆積，進一步傷害腎臟。以下藥物需特別注意：</p>
+    <div class="grid g2" style="margin-top:4px">
+      <div class="card">
+        <h3>🚫 需謹慎或避免使用</h3>
+        <ul class="cross chk">
+          <li><b>非類固醇類消炎藥（NSAIDs）</b>：如布洛芬、萘普生，減少腎臟血流</li>
+          <li>影像檢查顯影劑（電腦斷層 CT contrast）</li>
+          <li>來路不明的中草藥偏方，<b>尤其含馬兜鈴酸</b>或重金屬（鉛、汞）</li>
+          <li>某些抗生素（胺基糖苷類、萬古黴素）</li>
+          <li>肌肉鬆弛劑、某些口服降血糖藥（腎功能差時需調整劑量）</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>✅ 正確用藥原則</h3>
+        <ul class="chk">
+          <li>任何藥物（含保健食品）使用前，<b>主動告知醫師目前腎功能</b></li>
+          <li>定期追蹤腎功能，醫師才能適時調整藥物劑量</li>
+          <li>避免自行停藥或換藥，高血壓與血糖控制尤其重要</li>
+          <li>需要止痛時，優先選用<b>乙醯氨酚（Acetaminophen）</b>而非 NSAIDs</li>
+          <li>接受顯影劑檢查前後，充分補充水分</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 護腎生活 -->
+<section id="lifestyle">
+  <div class="wrap">
+    <h2><span class="en">Lifestyle &amp; diet for kidney health</span>護腎飲食與健康生活</h2>
+    <p class="lead">藥物治療是基礎，但飲食、運動與日常習慣同樣決定腎臟能走多遠。以下建議依台灣腎臟醫學會與 KDIGO 指引整理：</p>
+
+    <div class="tips">
+      <div class="tip">
+        <div class="ic">🧂</div>
+        <h4>低鈉飲食</h4>
+        <p>每日鈉攝取建議 &lt; 2,000 mg（即食鹽 &lt; 5 g）。避免醃漬品、加工食品、醬料包；外食多選原型食物，少加醬油、鹽巴。</p>
+      </div>
+      <div class="tip">
+        <div class="ic">🥩</div>
+        <h4>適量蛋白質</h4>
+        <p>非透析 CKD 患者建議蛋白質攝取 0.6–0.8 g/公斤體重/天，選擇優質蛋白（蛋、魚、豆腐），避免過量紅肉。量少質優是關鍵。</p>
+      </div>
+      <div class="tip">
+        <div class="ic">🍌</div>
+        <h4>控制高鉀食物</h4>
+        <p>晚期 CKD 或血鉀偏高者，減少香蕉、橘子、番茄、馬鈴薯、堅果等高鉀食物；蔬菜焯水可降低鉀含量。</p>
+      </div>
+      <div class="tip">
+        <div class="ic">🥛</div>
+        <h4>控制磷的攝取</h4>
+        <p>過多的磷會促進副甲狀腺素分泌，傷害骨骼與血管。減少加工食品、碳酸飲料（含磷酸）、動物內臟，注意食品添加物標示。</p>
+      </div>
+      <div class="tip">
+        <div class="ic">🚶</div>
+        <h4>規律有氧運動</h4>
+        <p>每週至少 150 分鐘中等強度有氧（快走、游泳、騎腳踏車）。運動可改善血壓、血糖、體重，間接保護腎臟功能。避免過度劇烈運動脫水。</p>
+      </div>
+      <div class="tip">
+        <div class="ic">💧</div>
+        <h4>適量補充水分</h4>
+        <p>早中晚期 CKD（非透析且無水腫）建議每日飲水 1,500–2,000 mL。服用 SGLT2i 者因排糖略增尿量，<b>更要記得補水</b>，避免脫水與泌尿道感染。</p>
+      </div>
+      <div class="tip">
+        <div class="ic">🩺</div>
+        <h4>控制血糖與血壓</h4>
+        <p>糖化血色素目標個人化（一般 &lt; 7%）；血壓目標 &lt; 130/80 mmHg。每降低 1% HbA1c，洗腎風險降低約 37%。</p>
+      </div>
+      <div class="tip">
+        <div class="ic">🚭</div>
+        <h4>戒菸</h4>
+        <p>吸菸加速腎功能惡化，也是心血管疾病的重要危險因子。戒菸後腎臟惡化速度可顯著減緩。</p>
+      </div>
+      <div class="tip">
+        <div class="ic">📅</div>
+        <h4>定期回診追蹤</h4>
+        <p>依 KDIGO 分期建議每年回診 1–4 次以上，定期抽血驗尿。早期發現異常、及時調整治療，才能有效延緩洗腎。</p>
+      </div>
+    </div>
+
+    <div class="warn" style="margin-top:24px">
+      <b>特別提醒：</b>CKD 飲食限制因腎功能分期、血鉀、血磷、是否透析而有<b>很大個別差異</b>——同一食物，有人需要限制、有人不需要。請務必與醫師及腎臟科衛教師、營養師<b>共同制定個人化飲食計畫</b>，切勿直接套用網路上一概而論的「腎臟病飲食禁忌」。
+    </div>
+  </div>
+</section>
+
+<!-- 聯絡 -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <h2><span class="en">Book a consultation</span>預約腎臟健康評估</h2>
+    <p>想了解自己的腎功能狀況？或已診斷 CKD/DKD 想評估保腎藥物？歡迎來電或加 LINE，由張凱傑院長為您完整評估。</p>
+    <div class="cinfo">
+      <div><div class="k">診所</div><div class="v">凱程診所（家醫／老年醫學／糖尿病・初期慢性腎臟病健康促進機構）</div></div>
+      <div><div class="k">電話預約</div><div class="v"><a href="tel:+886222231868" style="color:#fff">(02) 2223-1868</a></div></div>
+      <div><div class="k">LINE 預約</div><div class="v"><a href="https://line.me/R/ti/p/@hgf1022b" target="_blank" rel="noopener" style="color:#5eead4">加 LINE 好友　＠hgf1022b</a></div></div>
+      <div><div class="k">地址</div><div class="v"><a href="https://www.google.com/maps/search/?api=1&query=新北市中和區員山路150-8號" style="color:#fff" target="_blank" rel="noopener">235 新北市中和區員山路150-8號</a></div></div>
+      <div style="grid-column:1/-1"><div class="k">門診時間</div><div class="v" style="line-height:1.9">
+        週一～週六　上午 08:30–11:45　・　下午 15:30–17:45<br>
+        週一～週五　晚上 18:30–21:15　<span style="color:#9fb6b4;font-size:.85rem">（週四下午 15:00–15:30 衛教門診預約制・週六無晚診・週日休診）</span>
+      </div></div>
+    </div>
+    <div class="disc">
+      <b>醫療衛教聲明：</b>本網頁為衛生教育資訊，不能取代醫師面對面的診斷與處方，亦非藥品廣告。Jardiance、Forxiga、Kerendia 均為醫師處方藥物，是否適用、劑量與療程，須由合格醫師依個人病史、腎功能與檢查結果決定。文中藥物實證數據引用自公開大型臨床試驗之結果，僅供參考；個人治療反應與副作用因人而異。如有任何身體不適，請儘速就醫。
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div><a class="footer-back" href="https://cometchang98.github.io/kc-clinic/">🏠 回凱程診所首頁</a></div>
+  © 凱程診所 KC Family Clinic ・ 慢性腎臟病衛教專頁 ・ 院長 張凱傑 醫師<br>
+  本頁僅供衛教參考，實際治療請洽門診
+</footer>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}});
+});
+</script>
+</body>
+</html>
